@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/joao/pybind/build",
-  "command": "/usr/bin/g++-7   -g -o CMakeFiles/comm.dir/main.cpp.o -c /home/joao/pybind/main.cpp",
-  "file": "/home/joao/pybind/main.cpp"
-}
-]
