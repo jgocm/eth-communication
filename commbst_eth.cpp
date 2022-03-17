@@ -40,7 +40,7 @@ void CommBst_Eth::sendPosition(uint8_t id, Vector v, PositionType type, double m
     _udpSocket->SendDataGram((char *) (this->_mPos.encoded), sizeof(this->_mPos.encoded), this->_host, this->_port);
 }
 
-void CommBst_Eth::read(RobotInfo& info){
+/*void CommBst_Eth::read(RobotInfo& info){
     info.id = -1;
     info.type = msgType::NONE;
     //if(_udpSocket->readDatagram((char *) this->_receivePckt.encoded, sizeof this->_receivePckt.encoded) > 0){
@@ -52,7 +52,7 @@ void CommBst_Eth::read(RobotInfo& info){
             this->getOdometry(info);
         }
     }
-}
+}*/
 
 void CommBst_Eth::configReceiveChannel(bool turnOn, char *r_ip, unsigned short r_p)
 {
