@@ -11,12 +11,14 @@ set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 set(LIBS_DIR libs/communication)
 
-include_directories( ${LIBS_DIR} )
-link_directories( ${LIBS_DIR} )
 
 add_executable( ${PROJECT_NAME} ${SOURCE_FILES} )
 
-target_link_libraries( ${PROJECT_NAME} ${LIBS_DIR} )
+
+file(GLOB_RECURSE HEADER_FILES CONFIGURE_DEPENDS "*.h" "*.hh" "*.h++" "*.hxx" "*.H" "*.hpp")
+file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS "*.c" "*.cc" "*.c++" "*.cxx" "*.C" "*.cpp")
+
+add_library(${PROJECT_NAME} STATIC ${HEADER_FILES} ${SOURCE_FILES})
 
 include(CPack)
 
