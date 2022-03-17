@@ -1,0 +1,4 @@
+/home/joao/eth-communication/build/CMakeFiles/libs.dir
+/home/joao/eth-communication/build/CMakeFiles/test.dir
+/home/joao/eth-communication/build/CMakeFiles/edit_cache.dir
+/home/joao/eth-communication/build/CMakeFiles/rebuild_cache.dir

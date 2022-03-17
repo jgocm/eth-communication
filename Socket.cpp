@@ -7,7 +7,6 @@
 #include <cstdio>
 #include <pthread.h>
 #include <unistd.h>
-#include "Mutex.h"
 #define BUF_SIZE 1024
 CSocketException::CSocketException( const string &sMessage, bool blSysMsg /*= false*/ ) throw() :m_sMsg(sMessage)
 {
@@ -276,6 +275,7 @@ int CSocket::OnDataRead(unsigned long timeToWait)
     return nRet;
 }
  
+/*
 void CSocket::SetBindToDevice( const string& sInterface ) throw(CSocketException)
 {
     struct ifreq ifr;
@@ -287,9 +287,10 @@ void CSocket::SetBindToDevice( const string& sInterface ) throw(CSocketException
     if (nRet < 0)
     {
         throw CSocketException("Error in binding to device ", true);
-    }*/
+    }
 }
- 
+*/
+
 UDPSocket::UDPSocket() throw(CSocketException):CSocket(UdpSocket,IPv4Protocol)
 {
     SetBroadcast();

@@ -35,12 +35,12 @@ void CommBst_Eth::sendSpeed(uint8_t id, double vx, double vy, double w, uint8_t 
     _udpSocket->SendDataGram((char *) (this->_mSSL.encoded), sizeof(this->_mSSL.encoded), this->_host, this->_port);
 }
 
-void CommBst_Eth::sendPosition(uint8_t id, Vector v, PositionType type, double max_speed){
+/*void CommBst_Eth::sendPosition(uint8_t id, Vector v, PositionType type, double max_speed){
     this->setPosition(id, v, type, max_speed);
     _udpSocket->SendDataGram((char *) (this->_mPos.encoded), sizeof(this->_mPos.encoded), this->_host, this->_port);
 }
 
-/*void CommBst_Eth::read(RobotInfo& info){
+void CommBst_Eth::read(RobotInfo& info){
     info.id = -1;
     info.type = msgType::NONE;
     //if(_udpSocket->readDatagram((char *) this->_receivePckt.encoded, sizeof this->_receivePckt.encoded) > 0){

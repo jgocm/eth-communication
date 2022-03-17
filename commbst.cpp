@@ -39,7 +39,7 @@ void CommBst::setSSLSpeed(uint8_t id, double vx, double vy, double vw, uint8_t f
     this->_mSSL.decoded.command = static_cast<uint8_t>(command);
 }
 
-void CommBst::setPosition(uint8_t id, Vector v, PositionType type, double max_speed) {
+/*void CommBst::setPosition(uint8_t id, Vector v, PositionType type, double max_speed) {
 
     memset(this->_mPos.encoded, 0, POSITION_LENGTH);
 
@@ -88,7 +88,7 @@ void CommBst::getOdometry(RobotInfo& odometry)
         odometry.kickLoad = this->_odometryPckt.decoded.kickLoad / 100.0;
         odometry.type = msgType::ODOMETRY;
     }
-}
+}*/
 
 void CommBst::setConfigBst(NetworkType category)
 {

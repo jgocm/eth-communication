@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibs.a CMakeFiles/libs.dir/Socket.cpp.o CMakeFiles/libs.dir/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c.o CMakeFiles/libs.dir/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o CMakeFiles/libs.dir/commbst.cpp.o CMakeFiles/libs.dir/commbst_eth.cpp.o CMakeFiles/libs.dir/main.cpp.o
+/usr/bin/ranlib liblibs.a
