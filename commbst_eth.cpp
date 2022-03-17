@@ -44,7 +44,7 @@ void CommBst_Eth::read(RobotInfo& info){
     info.id = -1;
     info.type = msgType::NONE;
     //if(_udpSocket->readDatagram((char *) this->_receivePckt.encoded, sizeof this->_receivePckt.encoded) > 0){
-    if(_udpSocket->RecvDataGram((char *) this->_receivePckt.encoded, sizeof this->_receivePckt.encoded) > 0){
+    if(_udpSocket->Recv((char *) this->_receivePckt.encoded, sizeof this->_receivePckt.encoded) > 0){
         if(this->_receivePckt.decoded.typeMsg == static_cast<uint8_t>(msgType::TELEMETRY)){
             this->getTelemetry(info);
         }
