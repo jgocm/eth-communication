@@ -1,11 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-project(comm)
-set(SOURCE_FILES main.cpp)
-
-include(CTest)
-enable_testing()
-
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
@@ -15,9 +9,8 @@ file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS "*.c" "*.cc" "*.c++" "*.cxx" "*
 
 add_library(libs STATIC ${HEADER_FILES} ${SOURCE_FILES})
 
-target_link_libraries(${PROJECT_NAME} PUBLIC libs)
+add_executable(test main.cpp)
 
-add_executable( ${PROJECT_NAME} ${SOURCE_FILES} )
+target_link_libraries(test PUBLIC libs)
 
-include(CPack)
 
