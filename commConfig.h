@@ -47,7 +47,7 @@ enum class msgType
   BST_CONFIG,
   VSS_SPEED,
   SSL_SPEED,
-  TELEMTRY,
+  TELEMETRY,
   ODOMETRY,
   POSITION
 };
