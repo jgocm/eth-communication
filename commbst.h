@@ -7,8 +7,8 @@
 #ifndef COMMBST_H
 #define COMMBST_H
 
-#include "nRF24Communication/commConfig.h"
-#include "nRF24Communication/commTypes.h"
+#include "commConfig.h"
+#include "commTypes.h"
 #include <iostream>
 #include <string.h>
 

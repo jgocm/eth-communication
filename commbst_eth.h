@@ -1,7 +1,7 @@
 #ifndef COMMBST_ETH_H
 #define COMMBST_ETH_H
 
-#include "../commbst.h"
+#include "commbst.h"
 #include "Socket.h"
 
 class CommBst_Eth : public CommBst

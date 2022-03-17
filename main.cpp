@@ -1,5 +1,5 @@
 #include "stdint.h"
-#include "libs/communication/CommBst_Eth/commbst_eth.h"
+#include "commbst_eth.h"
 
 using namespace std;
 

@@ -2,10 +2,10 @@
 #include <errno.h> 
 #include <cstring>
 #include <fcntl.h>
-#include<iostream>
-#include<cstdlib>
-#include<cstdio>
-#include<pthread.h>
+#include <iostream>
+#include <cstdlib>
+#include <cstdio>
+#include <pthread.h>
 #include <unistd.h>
 #include "Mutex.h"
 #define BUF_SIZE 1024
